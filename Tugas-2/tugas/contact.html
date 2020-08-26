@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+  <style>
+    body {
+      margin: 0px;
+      padding: 0px;
+      font-family: 'Slabo 27px', serif;
+    }
+    #container {
+      border: 1px solid black;
+      padding: 10px 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    .form-group {
+      margin-top: 20px;
+      width: 400px;
+      display: flex;
+    }
+    .form-group label {
+      font-weight: bold;
+      width: 150px;
+    }
+    #submit {
+      margin-top: 20px;
+    }
+    div a button {
+      background-color: #0275d8;
+      border: 1px solid #0275d8;
+      color:white;
+      height: 35px;
+      border-radius: 5px;
+      width: 150px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-top: 30px;
+    }
+    div a button:hover {
+      background-color: #0d47a1;
+      border: 1px solid #0d47a1;
+    }
+  </style>
+  <title>Contact</title>
+</head>
+<body>
+  <div id="container">
+    <div>
+      <h1>Hubungi Kami</h1>
+      <p><strong>Kantor:</strong> di jalan belum jadi</p>
+      <p><strong>Nomor Telepon:</strong> 08XXX-XXXX-XXXX</p>
+      <p><strong>Email:</strong> email@contoh.com</p>
+    </div>
+    <div>
+      <h1>Kirimkan Pesan</h1>
+      <form>
+        <div class="form-group">
+          <label>Nama</label>
+          <input type="text">
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email">
+        </div>
+        <div class="form-group" style="align-items: center;">
+          <label style="vertical-align: middle;">Jenis Kelamin</label>
+          <div style="display: flex; flex-direction: column;">
+            <div>
+              <input type="radio" name="male" value="male" checked>
+              <label for="male" style="font-weight :normal;">Laki-laki</label>
+            </div>
+            <div>
+              <input type="radio" name="female" value="female">
+              <label for="female" style="font-weight :normal;">Perempuan</label>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top: 20px;">
+          <label style="margin-right: 72px; font-weight: bold;">Pesan Anda</label>
+          <textarea cols="35" rows="5"></textarea>
+        </div>
+        <button id="submit">Kirim</button>
+      </form>
+    </div>
+    <div style="text-align: center; margin-bottom: 20px;">
+      <a href="index.html"><button>Kembali ke Index</button></a>
+    </div>
+  </div>
+</body>
+</html>
