@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <style>
+    .body {
+      margin: 0px;
+      padding: 0px;
+    }
+    .container {
+      margin: 10px 20px;
+      border: 1px solid black;
+      border-radius: 5px;
+      padding: 25px;
+    }
+    h1 {
+      text-align: center;
+    }
+    .label {
+      font-weight: bold;
+      width: 20%;
+    }
+    .form-group {
+      display: flex;
+      position: relative;
+      margin-bottom: 15px;
+    }
+    .form-group input[type="text"] {
+      border: 1px solid lightgray;
+      border-radius: 5px;
+      height: 18px;
+    }
+    button {
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Form Pembelian Buah</h1>
+    <form>
+      <div class="form-group">
+        <label class="label">Nama Pelanggan</label>
+        <input type="text" />
+      </div>
+      <div class="form-group">
+        <label class="label" style="position: absolute; bottom: 0px;">Daftar Item</label>
+        <div style="margin-left: 20%">
+          <div>
+            <input type="checkbox" name="semangka" value="semangka"/>
+            <label for="semangka">Semangka</label>
+          </div>
+          <div>
+            <input type="checkbox" name="jeruk" value="jeruk"/>
+            <label for="jeruk">Jeruk</label>
+          </div>
+          <div>
+            <input type="checkbox" name="nanas" value="nanas"/>
+            <label for="nanas">Nanas</label>
+          </div>
+          <div>
+            <input type="checkbox" name="salak" value="salak"/>
+            <label for="salak">Salak</label>
+          </div>
+          <div>
+            <input type="checkbox" name="anggur" value="anggur"/>
+            <label for="anggur">Anggur</label>
+          </div>
+        </div>
+      </div>
+      <button>Kirim</button>
+    </form>
+  </div>
+</body>
+</html>
