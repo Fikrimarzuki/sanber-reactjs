@@ -1,0 +1,62 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.App {
+  padding: 25px 100px;
+}
+
+@media only screen and (max-width: 600px) {
+  .App {
+    padding: 25px;
+  }
+}
+
+.container {
+  margin: 10px 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 25px;
+}
+h1 {
+  text-align: center;
+}
+.label {
+  font-weight: bold;
+  width: 20%;
+}
+.form-group {
+  display: flex;
+  position: relative;
+  margin-bottom: 15px;
+}
+.form-group input[type="text"] {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  height: 18px;
+}
+button {
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.table-wrapper {
+  border: 1px solid black;
+  padding: 10px 10px 40px;
+  margin: 20px;
+  border-radius: 5px;
+}
+
+table {
+  border: 1px solid black;
+  margin: auto;
+}
+
+thead {
+  background-color: #aaaaaa;
+}
+
+tbody {
+  background-color: #f67e4f;
+}

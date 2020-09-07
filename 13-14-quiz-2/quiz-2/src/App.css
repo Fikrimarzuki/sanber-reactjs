@@ -1,0 +1,38 @@
+.card {
+  margin-bottom: 2em;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.card-content {
+  padding: 10px
+}
+
+.card-img {
+  width: 100%;
+  border-radius: 5px;
+  height: 300px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 600px) {
+  .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+  .card {
+      flex: 0 1 calc(75% - 1em);
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .card {
+      flex: 0 1 calc(49% - 1em);
+  }
+}
